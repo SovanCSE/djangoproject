@@ -6,6 +6,7 @@ import sys
 
 def main():
     os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'django_webapplication.settings')
+    # print("DJANGO_SETTINGS_MODULE::", os.environ.get('DJANGO_SETTINGS_MODULE'))
     try:
         from django.core.management import execute_from_command_line
     except ImportError as exc:
@@ -14,6 +15,7 @@ def main():
             "available on your PYTHONPATH environment variable? Did you "
             "forget to activate a virtual environment?"
         ) from exc
+    # print("cM::",sys.argv)
     execute_from_command_line(sys.argv)
 
 
