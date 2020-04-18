@@ -21,6 +21,14 @@ called as root directory of the project)
 >> python manage.py makemigrations firstapp
 >> python manage.py migrate firstapp
 
+#command to create dajngo super user through commandline:
+>> python manage.py createsuperuser
+
+#command to see migration file details as sql format:
+>> python manage.py sqlmigrate blog(app_name) 0001(first 4 digits from migration filename)
+
+#to open django manage shell
+>> python manage.py shell
 
 #template folder setting
 TEMPLATES = [
