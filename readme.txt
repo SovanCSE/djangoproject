@@ -30,6 +30,9 @@ called as root directory of the project)
 #to open django manage shell
 >> python manage.py shell
 
+##To install crispy package in django use the below:
+>> pip install djano-crispy-forms
+
 #template folder setting
 TEMPLATES = [
     {
